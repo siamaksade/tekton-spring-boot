@@ -18,7 +18,7 @@ public class MyController {
 
     @GetMapping("/")    
     public String index() {
-        greeting = environment.getProperty("GREETING","Hey Ya'll");
+        greeting = environment.getProperty("GREETING","Namaste");
         greeting = greeting + " from Spring Boot! " + count + " on " + hostname + "\n";
         System.out.println(greeting);
         return greeting;
