@@ -13,6 +13,8 @@ mvn clean compile package
 
 docker login quay.io
 
+
+
 mvn compile jib:build -Dimage=quay.io/burrsutter/tekton-git-jib-kn:v1
 
 Make the repository public
